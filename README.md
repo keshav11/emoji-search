@@ -8,7 +8,7 @@ pip install emojisearch
 ```
 ### using source
 ```
-first clone the repository
+$ git clone https://github.com/keshav11/emoji-search.git
 $ cd emojisearch
 $ pip install .
 ```
