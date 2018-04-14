@@ -1,7 +1,7 @@
 # emoji-search
 search emojis using command line
 
-## install
+## Install
 ### using pip
 ```
 pip install emojisearch
