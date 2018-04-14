@@ -5,30 +5,39 @@ import getopt
 
 def print_usage():
     """print usage of the utility"""
-    print('python', sys.argv[0], '-[sw] search_keyword')
+    print('emojisearch -[swh] search_keyword')
 
 
 def main():
     # parse and validate options and argument
     try:
-        options, arguments = getopt.getopt(sys.argv[1:], "sw")
+        options, arguments = getopt.getopt(sys.argv[1:], "swh")
     except getopt.GetoptError as exp:
         print(exp)
         print_usage()
         sys.exit(-2)
 
-    if len(arguments) == 0:
-        print('search keyword not provided')
-        print_usage()
-        sys.exit(-2)
-
     starts_with = False
     whole_word = False
+    help = False
+
     for opt, ars in options:
         if opt == '-s':
             starts_with = True
         if opt == '-w':
             whole_word = True
+        if opt == '-h':
+            help = True
+
+    if help:
+        print_usage()
+        sys.exit(0)
+
+
+    if len(arguments) == 0:
+        print('search keyword not provided')
+        print_usage()
+        sys.exit(-2)
 
     search_key = arguments[0]
     # search for emoji

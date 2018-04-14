@@ -4,6 +4,10 @@ search emojis using command line
 ## install
 ### using pip
 ```
+pip install emojisearch
+```
+### using source
+```
 first clone the repository
 $ cd emojisearch
 $ pip install .
@@ -17,7 +21,7 @@ $ emojisearch grinning_cat_face
 :grinning_cat_face:  😺
 :grinning_cat_face_with_smiling_eyes:  😸
 ```
-#### show results only if whole emoji name mathces with keyword
+#### show results only if whole emoji name matches with keyword
 ```
 $ emojisearch -w grinning_cat_face
 
