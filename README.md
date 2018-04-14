@@ -10,21 +10,21 @@ $ pip install .
 ```
 
 ## Usage
-### show results where keyword exits anywhere in the emoji name
+#### show results where keyword exits anywhere in the emoji name
 ```
 $ emojisearch grinning_cat_face
 
 :grinning_cat_face:  😺
 :grinning_cat_face_with_smiling_eyes:  😸
 ```
-### show results only if whole emoji name mathces with keyword
+#### show results only if whole emoji name mathces with keyword
 ```
 $ emojisearch -w grinning_cat_face
 
 :grinning_cat_face:  😺
 ```
 
-### search and show results ony if full emoji name starts with search keyword
+#### show results only if emoji name starts with search keyword
 ```
 $ emojisearch -s cat
 
