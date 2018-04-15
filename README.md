@@ -1,4 +1,7 @@
 # emoji-search
+
+[![PyPI](https://img.shields.io/pypi/v/emojisearch.svg)](https://pypi.python.org/pypi/emojisearch)
+
 search emojis using command line
 
 ## Install
